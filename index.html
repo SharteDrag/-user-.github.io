@@ -147,7 +147,7 @@
   let allImages = [];
 
   /* 画像読み込み（GitHub Pages 用） */
-  fetch("images/images.json")
+  fetch("images.json")
     .then(res => res.json())
     .then(images => { allImages = images; });
 
