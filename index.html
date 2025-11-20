@@ -96,6 +96,10 @@
   <input class="player-input" id="p4" placeholder="プレイヤー4">
   <input class="player-input" id="p5" placeholder="プレイヤー5">
   <input class="player-input" id="p6" placeholder="プレイヤー6">
+  <input class="player-input" id="p7" placeholder="プレイヤー7">
+  <input class="player-input" id="p8" placeholder="プレイヤー8">
+  <input class="player-input" id="p9" placeholder="プレイヤー9">
+  <input class="player-input" id="p10" placeholder="プレイヤー10">
   <br>
   <button id="assignBtn">チームに振り分け</button>
 </div>
@@ -134,7 +138,7 @@
   ========================== */
   assignBtn.onclick = () => {
     const names = [];
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 10; i++) {
       const v = document.getElementById("p" + i).value.trim();
       if (v) names.push(v);
     }
@@ -234,6 +238,3 @@
 
 </body>
 </html>
-
-
-
